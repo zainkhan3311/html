@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+
+</head>
+<body>
+    <label for="">name</label>
+    <input type="number" id="no">
+    <button type="button" onclick="nahi()">submit</button>
+    <div id="aya"></div>
+
+    <script>
+        // function zk(){
+        //     var z = "khan"
+        //     document.write(z);
+        
+        // function z1(){
+        //     var z2 = document.getElementById("name").value;
+        //     document.getElementById("hmm").innerHTML= z2;
+        //     document.getElementById("name").value="";
+        
+        function nahi(){
+            var ob = document.getElementById("no").value;
+            var jee = (ob/700)*100
+             document.getElementById("no").value;
+            document.getElementById("aya").innerHTML=jee;
+            
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
