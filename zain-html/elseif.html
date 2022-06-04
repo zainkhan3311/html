@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">maths</label>
+    <input type="text" id="math">
+    <br>
+    <label for="">science</label>
+    <input type="text" id="sci">
+    <br>
+    <label for="">english</label>
+    <input type="text" id="eng">
+    <br>
+    <label for="">urdu</label>
+    <input type="text" id="urdu">
+    <br>
+    <label for="">chemistry</label>
+    <input type="text" id="chem">
+    <br>
+    <label for="">physics</label>
+    <input type="text" id="phy">
+    <br>
+    <br>
+
+    <button type="button" onclick="zoo()">submit</button>
+    <div id="zk"></div>
+
+    
+    <script>
+        function zoo(){
+            var m=parseInt(document.getElementById ("math").value);
+            var s=parseInt(document.getElementById ("sci").value);
+            var e=parseInt(document.getElementById ("eng").value);
+            var u=parseInt(document.getElementById ("urdu").value);
+            var c=parseInt(document.getElementById ("chem").value);
+            var p=parseInt(document.getElementById ("phy").value);
+
+            var ob= m+s+e+u+c+p;
+            var per= (ob/600)*100;
+
+            if(per>= 80){
+                document.getElementById("zk").innerHTML= "maths"+ m+ "<br> science"+ s+"<br> english"+ e+"<br> urdu"+ u+"<br> chemistry"+ c+"<br> physics"+ p+"<br> obtain marks"+ ob+"<br> percentage"+ per+"<br> grade A+";}                
+                else if(per>= 70){
+                document.getElementById("zk").innerHTML= "maths"+ m+ "<br> science"+ s+"<br> english"+ e+"<br> urdu"+ u+"<br> chemistry"+ c+"<br> physics"+ p+"<br> obtain marks"+ ob+"<br> percentage"+ per+"<br> grade A";}
+                else if(per>= 60){
+                document.getElementById("zk").innerHTML= "maths"+ m+ "<br> science"+ s+"<br> english"+ e+"<br> urdu"+ u+"<br> chemistry"+ c+"<br> physics"+ p+"<br> obtain marks"+ ob+"<br> percentage"+ per+"<br> grade B";}
+                else if(per>= 50){
+                document.getElementById("zk").innerHTML= "maths"+ m+ "<br> science"+ s+"<br> english"+ e+"<br> urdu"+ u+"<br> chemistry"+ c+"<br> physics"+ p+"<br> obtain marks"+ ob+"<br> percentage"+ per+"<br> grade C";}
+                else{
+                    document.getElementById("zk").innerHTML= "maths"+ m+ "<br> science"+ s+"<br> english"+ e+"<br> urdu"+ u+"<br> chemistry"+ c+"<br> physics"+ p+"<br> obtain marks"+ ob+"<br> percentage"+ per+"<br> grade fail";}
+
+            }
+
+        
+
+    </script>
+    
+</body>
+</html>
