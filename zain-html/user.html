@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Number</label>
+    <input type="text" id="he">
+    <button type="button" onclick="she()">click</button>
+    <div id="T"></div>
+<!-- 
+    <script>
+        function she(){
+            var it= document.getElementById("he").value;
+            if(it% 2 ==0) {
+                document.getElementById("T").innerHTML="Even";
+                
+
+             }
+             else{
+                 document.getElementById("T").innerHTML="odd";
+             }
+             
+        }
+    </script> -->
+    <!-- <script>
+        function she(){
+            var inp= document.getElementById("he").value;
+            switch (inp) {
+                case "aptech teacher":
+                    document.getElementById("T").innerHTML="900000";
+                    
+                    break;
+                    case "aptech owner":
+                        document.getElementById("T").innerHTML="50000";
+                    break;                
+                default:
+                    document.getElementById("T").innerHTML= "not match";
+
+                    break;
+            }
+
+
+            }
+        
+    </script> -->
+    <script>
+        function she(){
+            var a= document.getElementById("he").value;
+            var per= (a/500)*100
+
+            switch (true) {
+                case (per>=80):
+                    document.getElementById("T").innerHTML="grade A+"+ per;
+                    break;
+                    case (per>=70):
+                        document.getElementById("T").innerHTML="grade A"+ per;
+                        break;
+                        case (per<=50):
+                        document.getElementById("T").innerHTML= "grade f"+ per;
+                        break;
+            
+                default:
+                    document.getElementById("T").innerHTML=""+ per;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+                    break;
+            }
+
+
+        }
+    </script>
+    
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
