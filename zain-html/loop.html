@@ -26,19 +26,19 @@
             
         }
     </script> -->
-    <label>Number</label>
+    <!-- <label>Number</label>
     <input type="number" id="inp">
     <button type="button" onclick="mn()" >click</button>
-    <div id="lo"></div>
+    <div id="lo"></div> -->
     
-    <script>
+     <!-- <script>
         function mn() {
             var n= document.getElementById("inp").value;
             var a=1;
     
-        while (a<=n) {
+        for (var a=1;a<=n;a++) {
             document.write(n + "*" + a + "=" + n*a + "<br>" )
-            a++;
+            
         }
 
         }
@@ -46,7 +46,46 @@
     
         
 
-    </script>
+    </script> -->
+        <!-- <script>
+            function mn() {
+                var n= document.getElementById("inp").value;
+                var a=1;
+        
+            while(a<=n) {
+                document.write(n + "*" + a + "=" + n*a + "<br>" )
+                a++
+            }
+    
+            }
+    
+        
+            
+    
+        </script> -->
+        <script>
+            // for(var a=1;a<=10;a++){
+            //     for(var n=1;n<=a;n++){
+            //         document.write("*")
+
+            //     }
+            //     document.write("<br>")
+            // }
+            for (var o=1;o<=5;o++){
+                for(var a=1;a<=o;a++)
+                for(var i=1;i<=a;i++){
+                    
+                    document.write("*")
+                    
+                
+
+
+                }
+                document.write("<br>")
+            }
+        </script>
+
+
     
 </body>
 </html>
