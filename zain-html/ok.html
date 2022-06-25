@@ -1,0 +1,71 @@
+air-for-share
+How it works Download Upgrade Feedback Login / Register
+Text
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo{
+            height: 200px;width: 200px;
+        }
+    </style>
+
+<script 
+src="https://maps.googleapis.com/maps/api/js">
+</script>
+ 
+</head>
+<body>
+
+<h1>Find Your Location</h1>
+<button type="submit" onclick="getC()">Location</button>
+<br>
+<div id="demo"></div>
+
+<script>
+
+var a=document.getElementById("demo");
+
+function getC(){
+
+if(navigator.geolocation){
+    // alert("supporting")
+    navigator.geolocation.getCurrentPosition(GetCoordinates);
+
+  
+
+}
+
+else{
+    alert("not supporting");
+
+
+}
+
+}
+function GetCoordinates(pos){
+    a.innerHTML="longitude" + pos . coords.longitude +
+     "latitude" + pos.coords.longitude;
+}
+
+var latlng = new google.maps.LatLng(24.9090471,67.0929445);
+    var map = new google.maps.Map(a,{
+
+        center: latlng,
+        zoom:16,
+        mapTypeId:"roadmap"
+
+
+    })
+</Script>
+
+
+</body>
+</html>
+
+ 
+
