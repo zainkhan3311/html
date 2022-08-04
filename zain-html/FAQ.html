@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <style>
+       
+        .container{
+            position: absolute;
+            left: 650px;
+            top: 80px;
+            color: rgb(62, 21, 21);
+        
+        }
+        .bg{
+            height: 600px;
+            background-position: center;
+            background-size: cover; 
+            background-image: url(/bbg1.jpg);
+            /* background-repeat: no-repeat; */
+            /* background-position: center; */
+            
+
+        }
+        .faq1, .faq2,.faq3,.faq4,.faq5{
+            border-bottom: 0.1px solid rgb(152, 152, 152);
+            width: 470px;
+            
+        }
+        
+        .f1,.f2,.f3,.f4{
+            border-bottom: 0.1px solid rgb(152, 152, 152);
+            width: 470px;
+            display: none;
+            
+             
+    }
+        .f{
+            color: rgb(62, 30, 30);
+            height: 100px;
+        text-shadow: 3px 3px 3px rgb(243, 239, 239);
+        font-size: 50px;
+        
+        
+        
+        }
+        .faq{
+            cursor: pointer;
+            /* background-color: black; */
+            
+        }
+        p{
+            color: white;
+            font-weight: bold;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg">
+
+        <div class="container">
+        <h1 class="f" >Frequently Asked Questions</h1>
+
+<div class="faq">
+
+<div class="faq1 p-2"> <strong><span>+</span></strong> &nbsp; Why is my cake texture gummy? </div>
+<p class="f1 p-2"> <strong><span>-</span></strong> &nbsp; You want your batter to be well combined </p>
+<div class="faq3 p-2"> <strong><span>+</span></strong> &nbsp; How much branches you have in Pakistan? </div>
+<p class="f1 p-2"> <strong><span>-</span></strong> &nbsp; We have 7 branches in pakistan and 5 in Dubai. </p>
+<div class="faq4 p-2"> <strong><span>+</span></strong> &nbsp; How do I place an order? </div>
+<p class="f1 p-2"> <strong><span>-</span></strong> &nbsp; You may place an order through our website and by calling us at:(021)000050; </p>
+<div class="faq5 p-2"> <strong><span>+</span></strong> &nbsp; Are you a full service bakery, or do you only make cakes? </div>
+<p class="f1 p-2"> <strong><span>-</span></strong> &nbsp; We are a full-service bakery.(please see our menu). </p>
+  
+
+</div>
+
+        </div>
+
+
+
+    </div>
+    <script>
+        
+        $(document).ready(function(){
+            $('.faq div').on('click',function(){
+                $(this)
+                .next()
+                .slideToggle();
+                })
+                 
+            });
+        
+    </script>
+
+    
+</body>
+</html>
